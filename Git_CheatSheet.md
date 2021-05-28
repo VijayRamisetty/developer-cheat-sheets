@@ -1,7 +1,6 @@
-# Git Help commands
+# Git Help commands ( CheatSheet )
 
 # Create local repo 
-
 	mkdir developer-cheat-sheets
 	cd developer-cheat-sheets
 	vim Docker_CheatSheet.md
