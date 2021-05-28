@@ -7,16 +7,21 @@
 # init
 	cd developer-cheat-sheets
 	git init                  // this by default creates 'master' local branch
-        git status                // this says branch current is 'master'
-        git push                  // as no remote defined, it fails 
+	git status                // this says branch current is 'master'
+	git push                  // as no remote defined, it fails 
 # add remote 
 	git remote -v             // see which remote , prints nothing first 
 	git remote add origin https://github.com/VijayRamisetty/developer-cheat-sheets.git   // add remote with alias origin 
-        git remote -v            // now this prints above remote location
+	git remote -v            // now this prints above remote location
 # git push
-	git push                  // this fails now as no master branch is present in remote origin
-        git push -u origin master // push to remote origin , create master if not already present
-        git push                  // next time onwards git push is enough to push current selected branch to remote
+	git push                  // this fails now as no master branch is present in remote origin (saying no upstream) 
+	git push -u origin master // push to remote origin , create master if not already present
+	git push                  // next time onwards git push is enough to push current selected branch to remote
+	
+	git checkout -b feature/branch-1                  // create new from curret in local
+	git push					  // fails as no upstream  
+	git push --set-upstream origin feature/branch-1   // create a branch in remote/  upstream and allows you to push
+
 # git branch
 	git branch               // lists local branches
 	git branch -r            // lists remote branches
@@ -24,6 +29,9 @@
 # git switch
 	git switch <branch-name>   // switch to <branch-name>
 	git checkout <branch-name> // this also switch to <branch-name>
+# git checkout
+	git checkout -b <new-branch>	  // this will create new-branch from current branch in local
+	git checkout -b feature/branch-1  // this will feature create branch from current branch in local
 # git log
 	git log			// prints all commits with code and comment
 	git log --oneline       // prints all commits only comment lines
@@ -36,6 +44,7 @@
 # git commit
 	git commit -m "commit message"		// commit provided git add is executed earlier
 	git commit -a -m "commit message" 	// add & commit in one command ( note -a followed by -m )
+	git add . ; git commit -m " add details on checkout "   // add and commit in one liner with ; seperated
 # git diff
 	git diff <branch1> <branch2>
 	git diff <master> <dev>     // what in master ++(plusplus) new in dev
@@ -50,4 +59,7 @@
 	git fetch	// only fetches metadata from remote + no merge  ( ie example: get from remote dev , won't merge )
 # git pull 
 	git pull 	// it does git fetch + merge to local  ( ie example: get from remote dev and merge to local dev )
-
+# git delete
+	git branch -d <branch-name>              // deletes local branch
+	git push origin --delete <branch-name>   // deletes remote branch  -d or --delete
+        git push origin -d feature/branch-2      // example to delete remote branch 
