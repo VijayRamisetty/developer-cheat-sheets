@@ -14,9 +14,14 @@
 	git remote add origin https://github.com/VijayRamisetty/developer-cheat-sheets.git   // add remote with alias origin 
         git remote -v            // now this prints above remote location
 # git push
-	git push                  // this fails now as no master branch is present in remote origin
+	git push                  // this fails now as no master branch is present in remote origin (saying no upstream) 
         git push -u origin master // push to remote origin , create master if not already present
         git push                  // next time onwards git push is enough to push current selected branch to remote
+	
+	git checkout -b feature/branch-1                  // create new from curret in local
+	git push					  // fails as no upstream  
+	git push --set-upstream origin feature/branch-1   // create a branch in remote/  upstream and allows you to push
+
 # git branch
 	git branch               // lists local branches
 	git branch -r            // lists remote branches
