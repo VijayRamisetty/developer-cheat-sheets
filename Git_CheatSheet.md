@@ -24,6 +24,9 @@
 # git switch
 	git switch <branch-name>   // switch to <branch-name>
 	git checkout <branch-name> // this also switch to <branch-name>
+# git checkout
+	git checkout -b <new-branch>	  // this will create new-branch from current branch in local
+	git checkout -b feature/branch-1  // this will feature create branch from current branch in local
 # git log
 	git log			// prints all commits with code and comment
 	git log --oneline       // prints all commits only comment lines
