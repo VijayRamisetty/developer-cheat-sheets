@@ -46,4 +46,8 @@
 	git switch master    // here master is our destination
 	git merge dev	     // merge changes in dev to current master 
 	git merge <src>	     // where dest is current branch
+# git fetch
+	git fetch	// only fetches metadata from remote + no merge  ( ie example: get from remote dev , won't merge )
+# git pull 
+	git pull 	// it does git fetch + merge to local  ( ie example: get from remote dev and merge to local dev )
 
