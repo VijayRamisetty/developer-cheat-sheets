@@ -37,3 +37,11 @@
 # git commit
 	git commit -m "commit message"		// commit provided git add is executed earlier
 	git commit -a -m "commit message" 	// add & commit in one command
+# git diff
+	git diff <branch1> <branch2>
+	git diff <master> <dev>
+# git merge
+	git switch master    // here master is our destination
+	git merge dev	     // merge changes in dev to current master 
+	git merge <src>	     // where dest is current branch
+
