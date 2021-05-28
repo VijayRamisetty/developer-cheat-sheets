@@ -59,4 +59,7 @@
 	git fetch	// only fetches metadata from remote + no merge  ( ie example: get from remote dev , won't merge )
 # git pull 
 	git pull 	// it does git fetch + merge to local  ( ie example: get from remote dev and merge to local dev )
-
+# git delte
+	git branch -d <branch-name>              // deletes local branch
+	git push origin --delete <branch-name>   // deletes remote branch  -d or --delete
+        git push origin -d feature/branch-2      // example to delete remote branch 
