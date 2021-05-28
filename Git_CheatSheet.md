@@ -36,7 +36,7 @@
 	git restore --staged <file-name>   // move back from staged to untrack 
 # git commit
 	git commit -m "commit message"		// commit provided git add is executed earlier
-	git commit -a -m "commit message" 	// add & commit in one command
+	git commit -a -m "commit message" 	// add & commit in one command ( note -a followed by -m )
 # git diff
 	git diff <branch1> <branch2>
 	git diff <master> <dev>     // what in master ++(plusplus) new in dev
