@@ -7,16 +7,16 @@
 # init
 	cd developer-cheat-sheets
 	git init                  // this by default creates 'master' local branch
-        git status                // this says branch current is 'master'
-        git push                  // as no remote defined, it fails 
+	git status                // this says branch current is 'master'
+	git push                  // as no remote defined, it fails 
 # add remote 
 	git remote -v             // see which remote , prints nothing first 
 	git remote add origin https://github.com/VijayRamisetty/developer-cheat-sheets.git   // add remote with alias origin 
-        git remote -v            // now this prints above remote location
+	git remote -v            // now this prints above remote location
 # git push
 	git push                  // this fails now as no master branch is present in remote origin (saying no upstream) 
-        git push -u origin master // push to remote origin , create master if not already present
-        git push                  // next time onwards git push is enough to push current selected branch to remote
+	git push -u origin master // push to remote origin , create master if not already present
+	git push                  // next time onwards git push is enough to push current selected branch to remote
 	
 	git checkout -b feature/branch-1                  // create new from curret in local
 	git push					  // fails as no upstream  
@@ -59,7 +59,7 @@
 	git fetch	// only fetches metadata from remote + no merge  ( ie example: get from remote dev , won't merge )
 # git pull 
 	git pull 	// it does git fetch + merge to local  ( ie example: get from remote dev and merge to local dev )
-# git delte
+# git delete
 	git branch -d <branch-name>              // deletes local branch
 	git push origin --delete <branch-name>   // deletes remote branch  -d or --delete
         git push origin -d feature/branch-2      // example to delete remote branch 
