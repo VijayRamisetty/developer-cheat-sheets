@@ -39,6 +39,7 @@
 # git commit
 	git commit -m "commit message"		// commit provided git add is executed earlier
 	git commit -a -m "commit message" 	// add & commit in one command ( note -a followed by -m )
+	git add . ; git commit -m " add details on checkout "   // add and commit in one liner with ; seperated
 # git diff
 	git diff <branch1> <branch2>
 	git diff <master> <dev>     // what in master ++(plusplus) new in dev
