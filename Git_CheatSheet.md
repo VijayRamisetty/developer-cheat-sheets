@@ -67,7 +67,14 @@
 	git branch -d <branch-name>              // deletes local branch
 	git push origin --delete <branch-name>   // deletes remote branch  -d or --delete
         git push origin -d feature/branch-2      // example to delete remote branch
-
+# git revert
+	git revert <hashcode> 	// this will revert the commit , opens an editor with notes "Reverted 'comment of that hashcode ' "
+	git revert --no-edit <hashcode> // this will revert the commit , but wont open an editor , comment msg is like above line
+# git reset 
+	git reset --hard HEAD~2 //  changes HEAD two commits back
+	git push 		//  won't work as Previous 2 commits are FF(Fast forward)
+	git push --force        // this allows you to push , with above head changed to two commits down 
+  
 
 # END 
 Thank you. 
