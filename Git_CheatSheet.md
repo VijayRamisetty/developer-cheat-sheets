@@ -66,4 +66,8 @@
 # git delete
 	git branch -d <branch-name>              // deletes local branch
 	git push origin --delete <branch-name>   // deletes remote branch  -d or --delete
-        git push origin -d feature/branch-2      // example to delete remote branch 
+        git push origin -d feature/branch-2      // example to delete remote branch
+
+
+# END 
+Thank you 
