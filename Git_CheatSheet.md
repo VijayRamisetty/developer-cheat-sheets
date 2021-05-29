@@ -75,6 +75,12 @@
 	git push 		//  won't work as Previous 2 commits are FF(Fast forward)
 	git push --force        // this allows you to push , with above head changed to two commits down 
   
+	git checkout dev		// suppose swtich or checkout dev as current
+	git checkout -b dev-backup	// create backup branch of dev , if something goes wrong in coming steps we will reset dev against dev-backup
+	git checkout dev                // current is dev
+	git reset --hard dev-backup     // irrespetive of changes to dev, when running this , it will reset dev to dev-backup
+	
+
 
 # END 
 Thank you. 
