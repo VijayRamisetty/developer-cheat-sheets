@@ -30,6 +30,10 @@
 	git switch <branch-name>   // switch to <branch-name>
 	git checkout <branch-name> // this also switch to <branch-name>
 # git checkout
+	git checkout <existing-local-branch>		  // selects local existing branch
+	git checkout <branch-not-exists>		  // it fails as no such branch
+	git checkout -b <branch-not-exits>		  // create new branch from current selected and select the new branch
+	
 	git checkout -b <new-branch>	  // this will create new-branch from current branch in local
 	git checkout -b feature/branch-1  // this will feature create branch from current branch in local
 # git log
