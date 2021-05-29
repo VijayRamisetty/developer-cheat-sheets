@@ -80,7 +80,8 @@
 	git checkout dev                // current is dev
 	git reset --hard dev-backup     // irrespetive of changes to dev, when running this , it will reset dev to dev-backup
 	
-
+# git rebase 
+	https://docs.gitlab.com/ee/topics/git/git_rebase.html
 
 # END 
 Thank you. 
